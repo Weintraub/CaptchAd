@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+     ================================================== -->
+     <meta charset="utf-8">
+     <title>CaptchAd</title>
+     <meta name="description" content="">  
+     <meta name="author" content="">
+
+   <!-- mobile specific metas
+     ================================================== -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+     ================================================== -->
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/vendor.min.css">
+     <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+     ================================================== -->
+     <script src="js/modernizr.js"></script>
+
+   <!-- favicons
+     ================================================== -->
+     <link rel="shortcut icon" href="favicon.png" >
+
+   </head>
+
+   <body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+       <nav id="nav-wrap">         
+
+        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+         <span class="menu-icon">Menu</span>
+       </a>
+       <a class="mobile-btn" href="#" title="Hide navigation">
+         <span class="menu-icon">Menu</span>
+       </a>            
+
+       <ul id="nav" class="nav">
+         <li><a class="smoothscroll" href="#hero">Home.</a></li>
+         <li><a class="smoothscroll" href="#about">About.</a></li>
+         <li><a class="smoothscroll" href="#services">Demo.</a></li>
+         <li><a class="smoothscroll" href="#testimonials">Testimonials.</a></li>
+         
+         <li><a class="smoothscroll" href="#contact">Contact.</a></li>
+       </ul> <!-- end #nav -->
+
+     </nav> <!-- end #nav-wrap -->    
+
+   </div>
+
+ </header> <!-- end header -->
+
+
+   <!-- homepage hero
+     ================================================== -->
+     <section id="hero">	
+
+      <div class="row hero-content">
+
+       <div class="twelve columns hero-container">
+
+        <!-- hero-slider start-->
+        <div id="hero-slider" class="flexslider">
+
+         <ul class="slides">
+
+          <!-- slide -->
+          <li>
+           <div class="flex-caption">
+            <h1 class="">Welcome to <span>CaptchAd</span>.
+            </h1>	
+
+            <h3 class="">The innovative new online advertising and security software, <i>providing two for one.</i></h3>				   
+          </div>						
+        </li>				              
+
+      </ul>
+
+    </div> <!-- end hero-slider -->				   
+
+  </div> <!-- end twelve columns-->
+
+</div> <!-- end row -->	
+
+<div id="more">
+  <a class="smoothscroll" href="#about">More About CaptchAd<i class="fa fa-angle-down"></i></a>
+</div> 	
+
+</section> <!-- end homepage hero -->
+
+<!-- About Section ================================================== -->
+<section id="about">
+
+  <div class="row section-head">
+
+    <div class="twelve columns">
+
+      <h1>Who Are We<span>.</span></h1>
+
+      <hr />          
+
+      <p>Welcome to CaptchAd, the revolutionary new software that will provide two for one. As you can see CaptchAd is an online advertising security software providing the fundamental function of a Captcha while acting as an advertisement. With clearer, more relevant images, and significantlt easier to use, CaptchAd is the next big thing.
+      </p>
+
+    </div> <!-- end section-head -->
+
+  </div>
+
+  <div class="row mobile-no-padding">         
+
+    <div class="process bgrid-half tab-bgrid-whole group">
+
+      <div class="bgrid">
+
+       <h3>Unique.</h3>  
+
+       <p>CaptchAd is the first of its kind, offering a two in one experience of security software and online advertising. Especially, as our advertisements will not be blocked by AdBlocks, a major challenge in the industry. This on top of the full engagement required of a Captcha provides CaptchAd this unique opportunity.
+       </p>
+
+     </div>
+
+     <div class="bgrid">
+
+       <h3>Valuable.</h3>
+
+       <p>What makes CaptchAd so valuable is the full engagement and interactiveness that comes with our product. This along with the free service and large consumer base allows CaptchAd to become the industry standard.
+       </p> 
+
+     </div> 
+
+     <div class="bgrid">
+
+       <h3>Viable.</h3> 
+
+       <p>The online advertising industry is exponentially growing, valued at over <b>$1 billion dollars</b> in 2020 making such a unique product like CaptchAd sustainable. With the increased longevity comes the opportunity to impact such a large target demographic and potential for continuous growth.
+       </p>
+
+     </div>
+
+     <div class="bgrid">
+
+       <h3>Future.</h3>
+
+       <p>With our innovative new technology we are shifting the paradigm. Get ready to meet the future in a merged market of advertising and security technology.
+       </p> 
+
+     </div>
+
+   </div> <!-- end process -->        
+
+ </div> <!-- end row -->            
+
+</section> <!-- end about -->  
+
+
+<!-- Services Section ================================================== -->
+<section id="services">
+
+  <div class="row section-head">
+
+    <div class="twelve columns">
+      <h1>Demo our Captcha verification feauture<span>.</span></h1>     
+      <hr />   
+               
+      <p> Click all images with a pineapple!</p>
+      <div class="captcha">
+        <button class="tile" id="b1" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b2" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b3" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b4" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b5" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b6" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b7" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b8" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b9" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b10" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b11" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b12" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b13" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b14" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b15" onclick="verifyTileUpdate(this.id)"></button>
+        <button class="tile" id="b16" onclick="verifyTileUpdate(this.id)"></button>
+        <button id="testing" class="selector" onclick="verifyB()">Verify</button>
+      </div>
+      
+      <hr />      	         
+      <h1>Demo our Captcha creation feauture<span>.</span></h1>
+      <p> Click to chose the answer to your Captcha.<br>
+      Then it's ready to be used!</p>
+      <div class="captcha">
+        <button class="tile" id="a1" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a2" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a3" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a4" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a5" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a6" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a7" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a8" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a9" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a10" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a11" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a12" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a13" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a14" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a15" onclick="tileUpdate(this.id)"></button>
+        <button class="tile" id="a16" onclick="tileUpdate(this.id)"></button>
+
+        <button id="chose" class="selector" onclick="updateAnswers()">Click to Choose your answers</button>
+        <button id="submit" class="selector" onclick="verify()">Verify</button>
+      </div>
+
+    
+      
+
+
+    </div>
+
+  </div> <!-- end section-head -->      
+
+
+</div> <!-- end row -->      
+
+</section> <!-- end services -->
+
+
+<!-- Testimonials Section ================================================== -->
+<section id="testimonials">
+  <div class="row content flex-container">
+   <div id="testimonial-slider" class="flexslider">
+
+    <ul class="slides">
+      <li>                       
+        <p>I like the technical elements of it. From a business perspective this is going to be very valuable for the end client as its a non-invasive advertisment. I can even see someone using this on their personal site, not just on a commercial site. I can see this going somewhere.
+        </p>
+        <div class="testimonial-author">
+          <img src="images/avatars/andrew.jpeg" alt="Author image">
+          <div class="author-info">
+            Andrew McClenaghan
+            <span>President, Digital Echidna.</span>
+          </div>
+        </div>                        
+      </li>
+
+      <li>
+        <p> Approximately 200 million Captchas are typed everyday by people around the world. I have multiple ideas per day, all the time. The vast majority of these are completely idiotic. Usually, I just sit on the idea for several months. And if I have not decided that it's idiotic, then it might be a good idea. 
+        </p>
+
+        <div class="testimonial-author">
+          <img src="images/avatars/luis.jpeg" alt="Author image">
+          <div class="author-info">
+            Luis von Ahn
+            <span class="position">Consulting Professor, Carnegie Mellon University.</span>
+          </div>
+        </div>
+      </li> <!-- end slide -->
+
+      <!-- end slide -->
+
+    </ul> <!-- end slides -->
+
+  </div> <!-- end flexslider -->         
+
+</div> <!-- end row -->
+
+</section> <!-- end testimonials section -->  
+
+
+<!-- contact ================================================== -->
+<section id="contact" >
+
+  <div class="row section-head">
+
+   <div class="twelve columns">
+
+    <h1>Get In Touch<span>.</span></h1>
+
+    <hr />	        
+
+  </div>
+
+</div> <!-- end section-head -->
+
+<div class="row">
+
+ <div id="contact-form" class="six columns tab-whole left">
+
+  <!-- form -->
+  <form name="contactForm" id="contactForm" method="post" action=""  >
+   <fieldset>
+
+    <div class="group">
+      <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required />
+    </div>
+    <div>
+     <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+   </div>
+   <div>
+     <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+   </div>                       
+   <div>
+     <textarea name="contactMessage"  id="contactMessage" placeholder="Message" rows="10" cols="50" required ></textarea>
+   </div>                      
+   <div>
+     <button class="submitform">Submit</button>
+     <div id="submit-loader">
+      <div class="text-loader">Sending...</div>                             
+      <div class="s-loader">
+       <div class="bounce1"></div>
+       <div class="bounce2"></div>
+       <div class="bounce3"></div>
+     </div>
+   </div>
+ </div>
+
+</fieldset>
+</form> <!-- Form End -->
+
+<!-- contact-warning -->
+<div id="message-warning"></div>
+<!-- contact-success -->
+<div id="message-success">
+ <i class="icon-ok"></i>Your message was sent, thank you!<br />
+</div> 
+
+</section>  <!-- end contact -->
+
+
+<!-- Footer ================================================== -->
+<footer>
+  <div class="row">  
+    <div class="twelve columns content group">
+     <hr />
+   </div>
+   <ul class="copyright">
+    <li>&copy; Copyright 2018.</li> 
+    <li>Design by <a href="https://www.linkedin.com/in/daniel-w-4465b2106/" target="_blank">Daniel Weintraub</a>.</li>
+  </ul>
+
+  <div id="go-top">
+    <a class="smoothscroll" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+  </div>
+
+</div> <!-- end row -->
+
+</footer> <!-- end footer -->
+
+<div id="preloader"> 
+ <div id="loader"></div>
+</div> 
+
+<!-- Java Script ================================================== --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.fittext.js"></script>
+<script src="js/jquery.placeholder.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>  
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

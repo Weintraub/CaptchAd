@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://fiddle.jshell.net/p9qdhfub/794/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title></title>
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="./dummy.js"></script>
+  <script type="text/javascript" src="./jquery-1.9.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./result-light.css">
+
+
+  <script type="text/javascript">
+
+
+    $(window).on('load', function(){
+      
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        
+        $('#blah').attr('src', e.target.result);
+      }
+      
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      
+      $("#imgInp").change(function(){
+        readURL(this);
+      });
+
+    });
+
+  </script>
+
+</head>
+<body>
+  <div>
+    <p>
+      Create a Custom CaptchAd!
+    </p>
+  </div>
+  <div id="captcha">
+    <button class="tile" id="a1" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a2" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a3" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a4" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a5" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a6" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a7" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a8" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a9" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a10" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a11" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a12" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a13" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a14" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a15" onclick="tileUpdate(this.id)"></button>
+    <button class="tile" id="a16" onclick="tileUpdate(this.id)"></button>
+
+    <button id="chose" class="selector" onclick="updateAnswers()">Choose your answers</button>
+    <button id="submit" class="selector" onclick="verify()">Verify</button>
+
+    <form id="form1" runat="server">
+      <input type="file" id="imgInp">
+      <img id="blah" src="saved_resource.html" alt="your image">
+    </form>
+  </div>
+
+</body>
+</html>
